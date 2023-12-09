@@ -111,6 +111,7 @@ function handler(event) {
     }
   );
   function onKey(param) {
+    param.preventDefault();
     if (param.code === "Escape") {
       instance.close();
     }
